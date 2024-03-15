@@ -3,87 +3,93 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Awesome Website</title>
+<title>Shivam Gupta's Portfolio</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- Animate.css -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 <style>
   body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    padding-top: 56px;
   }
-  .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+  .navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
   }
-  header {
-    background: #50b3a2;
+  .header {
+    background: #333;
     color: white;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #e8491d 3px solid;
+    padding: 1em 0;
+    text-align: center;
   }
-  header a {
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-  }
-  header ul {
-    padding: 0;
-    list-style: none;
-  }
-  header li {
-    display: inline;
-    padding: 0 20px 0 20px;
-  }
-  header #branding {
-    float: left;
-  }
-  header #branding h1 {
+  .header h1 {
     margin: 0;
+    color: #ff9800;
   }
-  header nav {
-    float: right;
-    margin-top: 10px;
+  .content-section {
+    margin: 2em 0;
   }
-  header .highlight, header .current a {
-    color: #e8491d;
-    font-weight: bold;
+  .footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
   }
-  header a:hover {
-    color: #ffffff;
-    font-weight: bold;
+  .footer p {
+    margin: 0;
   }
 </style>
 </head>
 <body>
 
-<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
-    <div id="branding">
-      <h1><span class="highlight">My</span> Website</h1>
-    </div>
-    <nav>
-      <ul>
-        <li class="current"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+    <a class="navbar-brand" href="#">Shivam Gupta</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
       </ul>
-    </nav>
+    </div>
   </div>
-</header>
+</nav>
 
-<section class="container">
-  <h1 class="animate__animated animate__bounce">Welcome to My Awesome Website</h1>
-  <p>This is a paragraph on my website. Enjoy the beautiful animations and pictures!</p>
-  <img src="your-image.jpg" alt="Your Image" class="animate__animated animate__fadeIn">
-</section>
+<div class="header animate__animated animate__fadeIn">
+  <h1>Welcome to Shivam Gupta's Portfolio</h1>
+</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+<div class="container content-section">
+  <div class="row">
+    <div class="col-lg-12">
+      <p>This is Shivam Gupta's personal website. Here you can find information about my skills, work, and projects.</p>
+      <img src="your-image.jpg" alt="Shivam Gupta" class="img-fluid rounded-circle animate__animated animate__zoomIn">
+    </div>
+  </div>
+</div>
 
+<div class="footer">
+  <p>&copy; 2024 Shivam Gupta</p>
+</div>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
