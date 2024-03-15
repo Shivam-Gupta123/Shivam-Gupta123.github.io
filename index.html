@@ -8,32 +8,44 @@
     <style>
       
       h1 {color:black;}
-      p {color:black;}
+      p {
+      	color:black;
+        padding: 0px 15px;
+     }
 
       body {
           margin: 0;
           padding: 0;
           background-color: rgb(243, 119, 119);
       }
+      
+      header {
+          position: relative; /* Add this to ensure the nav is positioned relative to the header */
+          padding: 10px 15px; /* Add padding to the header */
+	}
 
-      header nav {
-          text-align: right;
-          background-color: rgb(69, 182, 235); 
-          padding: 10px 0;
-          max-width: 20%;
-          float: right;
+	 header nav {
+          position: absolute; /* Position the nav absolutely within the header */
+          right: 0; /* Align to the right */
+          top: 0; /* Align to the top */
+          margin: 0; /* Ensure there is no margin */
+          background-color: rgb(141, 203, 231);
+          padding: 5px 20px;
+	}
 
-      }
 
       header nav ul {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-      }
+          list-style: none; /* Remove the default list style */
+          margin: 0; /* Reset the margin */
+          padding: 10; /* Reset the padding */
+          display: flex; /* Use flex display for the container */
+          justify-content: space-around; /* Evenly space the flex items within the container */
+          align-items: center; /* Align items vertically */
+          height: 20px; /* Set a height for your nav bar */
+	}
 
       header nav ul li {
-          display: inline;
-          margin-right: 20px; 
+          margin-right: 25px; 
       }
 
       header nav ul li a {
